@@ -1,0 +1,19 @@
+{
+  "name": "Wokku FastAPI Starter",
+  "description": "Bare-bones FastAPI app that deploys on Dokku via the heroku-python buildpack.",
+  "keywords": ["python", "fastapi", "dokku", "wokku"],
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ],
+  "env": {
+    "WEB_CONCURRENCY": {
+      "description": "Number of gunicorn workers (default: 1).",
+      "value": "1"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
