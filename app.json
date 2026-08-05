@@ -1,7 +1,7 @@
 {
   "name": "Wokku FastAPI Starter",
-  "description": "Bare-bones FastAPI app that deploys on Dokku via the heroku-python buildpack.",
-  "keywords": ["python", "fastapi", "dokku", "wokku"],
+  "description": "Bare-bones FastAPI app that deploys on Wokku.",
+  "keywords": ["python", "fastapi", "wokku"],
   "buildpacks": [
     { "url": "heroku/python" }
   ],

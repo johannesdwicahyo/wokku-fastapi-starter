@@ -1,20 +1,19 @@
 # Wokku FastAPI Starter
 
-A bare-bones [FastAPI](https://fastapi.tiangolo.com/) application that deploys cleanly on [Dokku](https://dokku.com) via the Heroku Python buildpack — deploy it in one click from [Wokku](https://wokku.cloud) and get a production-grade async Python API running on your own server in under two minutes.
+A bare-bones [FastAPI](https://fastapi.tiangolo.com/) application that deploys cleanly on [Wokku](https://wokku.cloud) — deploy it in one click from [Wokku](https://wokku.cloud) and get a production-grade async Python API running on your own server in under two minutes.
 
 ## One-click deploy on Wokku
 
 [![Deploy on Wokku](https://wokku.cloud/deploy-button.svg)](https://wokku.cloud/deploy?template=wokku-fastapi-starter)
 
-## Manual deploy (Dokku)
+## Manual deploy (git push)
 
 ```bash
-# On your Dokku server
-dokku apps:create my-fastapi-app
+# Create the app in the Wokku dashboard, then:
 
 # From your local machine
-git remote add dokku dokku@<your-server>:my-fastapi-app
-git push dokku main
+git remote add wokku <your-app's git remote from the dashboard>
+git push wokku main
 ```
 
 ## Stack
